@@ -1,0 +1,13 @@
+def find_maximum(a,b):
+    if a> b:
+        return a
+    else:
+        return b
+num1 = input("Enter first number: ")
+num2 = input("Enter second number: ")
+max_num = find_maximum(num1,num2)
+print("The greatest number is: ",max_num)
+Output
+Enter first number: 52
+Enter second number: 65
+The greatest number is:  65
