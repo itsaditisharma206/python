@@ -1,0 +1,19 @@
+def change_string(s):
+    try:
+        s[0] = 'X'
+    except TypeError as e:
+        print("Error:", e)
+        s = "X" + s[1:]
+        print("Inside function, string becomes:", s)
+
+my_string = input("Enter a string: ")
+print("Original string:", my_string)
+change_string(my_string)
+print("Original string after function call:", my_string)
+
+Output:
+Enter a string: Hello
+Original string: Hello
+Error: 'str' object does not support item assignment
+Inside function, string becomes: Xello
+Original string after function call: Hello
