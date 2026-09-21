@@ -1,0 +1,9 @@
+def celsius_to_fahrenheit(c):
+    f = (c * 9/5) + 32
+    return f
+celsius = float(input("Enter temperature in celsius: "))
+fahrenheit = celsius_to_fahrenheit(celsius)
+print(f"{celsius}°C is equal to {fahrenheit}°F")
+#output
+Enter temperature in celsius: 30
+30.0°C is equal to 86.0°F
