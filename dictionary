@@ -1,0 +1,20 @@
+def add_entry(d):
+    d['new_key'] = 'new_value'
+def reassign_dict(d):
+    d = {'completely':'new'}
+key = input("Enter key for your dictionary: ")
+value = input("Enter a value for your dictionary: ")
+my_dict = {key:value}
+print("\n---Testing add_entry---")
+print("Before:",my_dict)
+add_entry(my_dict)
+print("After: ",my_dict)
+
+  Output:
+Enter key for your dictionary: name
+Enter a value for your dictionary: 'Aditi'
+
+---Testing add_entry---
+Before: {'name': "'Aditi'"}
+After:  {'name': "'Aditi'", 'new_key': 'new_value'}
+PS C:\Users\hp\Desktop\python.py> 
