@@ -1,0 +1,12 @@
+def countdown(n):
+    while n >= 1:
+        yield n    
+        n = n - 1  
+for num in countdown(5):
+    print(num)
+OUTPUT:
+5
+4
+3
+2
+1
